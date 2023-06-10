@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  transition: box-shadow 0.1s ease;
+}
+
+.button-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.button:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.button-title {
+  font-size: 24px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.button img {
+  object-fit: cover;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .button-container {
+    width: 100%;
+    height: 50%;
+  }
+}
