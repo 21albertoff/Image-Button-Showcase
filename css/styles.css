@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+body {
+  font-family: Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: BlackThunder;
+  src: url(../fonts/BlackThunder.otf);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -35,6 +44,7 @@
 }
 
 .text-container {
+  font-family: BlackThunder;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,7 +55,18 @@
 }
 
 .button-title {
-  font-size: 24px;
+  font-family: BlackThunder;
+  font-size: 4em;
+  font-weight: 200;
+  text-shadow: 5px 5px 5px rgba(85, 179, 161, 1);
+}
+
+.button-text {
+  color: #d8a456;
+  font-family: BlackThunder;
+  font-size: 2em;
+  font-weight: 50;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .logo-container {
@@ -54,7 +75,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #f0f0f0;
   z-index: 2;
 }
 
@@ -65,15 +86,21 @@
 .logo {
   width: 100px;
   height: auto;
-  margin-bottom: 10px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+
 }
 
 .title {
-  font-size: 32px;
+  color: #f0f0f0;
+  font-family: BlackThunder;
+  font-size: 3em;
+  font-weight: 200;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .container {
     flex-direction: column;
   }
